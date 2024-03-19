@@ -356,5 +356,13 @@
     id: 89,
     name: "Multi-file program",
     is_archived: false,
+  },
+  {
+    id: 1001,
+    name: "C++ (GCC 11.3.0)",
+    is_archived: false,
+    source_file: "main.cpp",
+    compile_cmd: "/usr/local/gcc-11.3.0/bin/g++ %s main.cpp",
+    run_cmd: "LD_LIBRARY_PATH=/usr/local/gcc-11.3.0/lib64 ./a.out"
   }
 ]
