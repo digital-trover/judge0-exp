@@ -364,5 +364,12 @@
     source_file: "main.cpp",
     compile_cmd: "/usr/local/gcc-11.3.0/bin/g++ %s main.cpp",
     run_cmd: "LD_LIBRARY_PATH=/usr/local/gcc-11.3.0/lib64 ./a.out"
+  },
+  {
+    id: 1002,
+    name: "Python (3.12.3)",
+    is_archived: false,
+    source_file: "script.py",
+    run_cmd: "/usr/local/python-3.12.3/bin/python3 script.py"
   }
 ]

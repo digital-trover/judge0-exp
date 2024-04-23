@@ -1,4 +1,4 @@
-FROM rafay9/judge0_compilers:gcc-11.3.0 AS production
+FROM rafay9/judge0_compilers:1.4.0-gcc11.3.0-py3.12.3 AS production
 
 ENV JUDGE0_HOMEPAGE "https://judge0.com"
 LABEL homepage=$JUDGE0_HOMEPAGE
@@ -44,7 +44,7 @@ RUN useradd -u 1000 -m -r judge0 && \
 
 USER judge0
 
-ENV JUDGE0_VERSION "1.13.1-A"
+ENV JUDGE0_VERSION "1.13.1-B"
 LABEL version=$JUDGE0_VERSION
 
 
